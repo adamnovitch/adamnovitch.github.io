@@ -10,8 +10,8 @@
 				"convertedBy": []
 			}
 		],
-		"dateAdded": 1613524913,
-		"dateLastModified": 1613524913
+		"dateAdded": 1615754177,
+		"dateLastModified": 1615754177
 	},
 	"monster": [
 		{
@@ -3101,6 +3101,160 @@
 			],
 			"hasFluff": true,
 			"hasFluffImages": true
+		},
+		{
+			"name": "Ezekiel Nighstar",
+			"shortName": "Zeke",
+			"source": "TBC",
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 40",
+				"average": 130
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 14,
+			"int": 13,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+8",
+				"int": "+5"
+			},
+			"skill": {
+				"acrobatics": "+12",
+				"deception": "+7",
+				"perception": "+4",
+				"stealth": "+12",
+				"persuasion": "+7"
+			},
+			"passive": 14,
+			"languages": [
+				"Thieves' cant plus any two languages"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Fancy Footwork",
+					"entries": [
+						"Zeke gets to add his Charisma modifier to his initiative rolls. When Zeke makes a weapon attack against a target, he does not provoke opportunity attacks from that target."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"Zeke deals an extra 21 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Zeke that isn't {@condition incapacitated} and he doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Great Wave",
+					"entries": [
+						"Zeke can cast Tidal Wave or Wall of Water. Tidal wave can be cast on all creatures surrounding Zeke."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Zeke uses Great Wave, then makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 8} to hit, range 80/320 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"Zeke adds +4 to his AC against 1 attack."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png?v=1.124.0",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3?v=1.124.0"
+			},
+			"altArt": [
+				{
+					"name": "Vistana Assassin",
+					"source": "CoS"
+				}
+			],
+			"traitTags": [
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"languageTags": [
+				"TC",
+				"X"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasFluff": true
 		}
 	]
 }
